@@ -1,0 +1,1154 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3706C2322B5E7DFF000F889B /* TemplateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3706C2312B5E7DFF000F889B /* TemplateView.swift */; };
+		3706C2362B5E7DFF000F889B /* ViewControllerRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3706C2352B5E7DFF000F889B /* ViewControllerRepresentable.swift */; };
+		3706C2392B5E7DFF000F889B /* Synth.aif in Resources */ = {isa = PBXBuildFile; fileRef = 3706C2382B5E7DFF000F889B /* Synth.aif */; };
+		3706C23B2B5E7DFF000F889B /* SimplePlayEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3706C23A2B5E7DFF000F889B /* SimplePlayEngine.swift */; };
+		3706C23D2B5E7DFF000F889B /* TypeAliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3706C23C2B5E7DFF000F889B /* TypeAliases.swift */; };
+		3706C2402B5E7DFF000F889B /* StringHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3706C23F2B5E7DFF000F889B /* StringHelpers.swift */; };
+		3706C2432B5E7DFF000F889B /* MIDIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3706C2422B5E7DFF000F889B /* MIDIManager.swift */; };
+		3706C2462B5E7DFF000F889B /* AudioUnitHostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3706C2452B5E7DFF000F889B /* AudioUnitHostModel.swift */; };
+		3706C2482B5E7DFF000F889B /* AudioUnitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3706C2472B5E7DFF000F889B /* AudioUnitViewModel.swift */; };
+		3706C24A2B5E7DFF000F889B /* CreativePadApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3706C2492B5E7DFF000F889B /* CreativePadApp.swift */; };
+		3706C24C2B5E7E01000F889B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3706C24B2B5E7E01000F889B /* Assets.xcassets */; };
+		3706C24F2B5E7E01000F889B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3706C24E2B5E7E01000F889B /* Preview Assets.xcassets */; };
+		3706C25A2B5E7E01000F889B /* CreativePadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3706C2592B5E7E01000F889B /* CreativePadTests.swift */; };
+		3706C2642B5E7E01000F889B /* CreativePadUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3706C2632B5E7E01000F889B /* CreativePadUITests.swift */; };
+		3706C2662B5E7E01000F889B /* CreativePadUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3706C2652B5E7E01000F889B /* CreativePadUITestsLaunchTests.swift */; };
+		3706C26C2B5E7E01000F889B /* CreativePadExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 3706C26B2B5E7E01000F889B /* CreativePadExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3706C2712B5E7E01000F889B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3706C2702B5E7E01000F889B /* README.md */; };
+		3706C2762B5E7E01000F889B /* ParameterSpecBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3706C2752B5E7E01000F889B /* ParameterSpecBase.swift */; };
+		3706C2792B5E7E01000F889B /* CrossPlatform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3706C2782B5E7E01000F889B /* CrossPlatform.swift */; };
+		3706C27B2B5E7E01000F889B /* String+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3706C27A2B5E7E01000F889B /* String+Utils.swift */; };
+		3706C27F2B5E7E01000F889B /* CreativePadExtensionAudioUnit.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3706C27E2B5E7E01000F889B /* CreativePadExtensionAudioUnit.mm */; };
+		3706C2822B5E7E01000F889B /* CreativePadExtensionAUProcessHelper.hpp in Resources */ = {isa = PBXBuildFile; fileRef = 3706C2812B5E7E01000F889B /* CreativePadExtensionAUProcessHelper.hpp */; };
+		3706C2842B5E7E01000F889B /* CreativePadExtensionBufferedAudioBus.hpp in Resources */ = {isa = PBXBuildFile; fileRef = 3706C2832B5E7E01000F889B /* CreativePadExtensionBufferedAudioBus.hpp */; };
+		3706C2882B5E7E01000F889B /* Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3706C2872B5E7E01000F889B /* Parameters.swift */; };
+		3706C28B2B5E7E01000F889B /* CreativePadExtensionDSPKernel.hpp in Resources */ = {isa = PBXBuildFile; fileRef = 3706C28A2B5E7E01000F889B /* CreativePadExtensionDSPKernel.hpp */; };
+		3706C28E2B5E7E01000F889B /* CreativePadExtensionMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3706C28D2B5E7E01000F889B /* CreativePadExtensionMainView.swift */; };
+		3706C2902B5E7E01000F889B /* ParameterSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3706C28F2B5E7E01000F889B /* ParameterSlider.swift */; };
+		3706C2952B5E7E01000F889B /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3706C2932B5E7E01000F889B /* MainInterface.storyboard */; };
+		3706C2972B5E7E01000F889B /* ObservableAUParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3706C2962B5E7E01000F889B /* ObservableAUParameter.swift */; };
+		3706C2992B5E7E01000F889B /* AudioUnitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3706C2982B5E7E01000F889B /* AudioUnitViewController.swift */; };
+		371B30102B5E87F700004CDE /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371B300F2B5E87F700004CDE /* AudioPlayer.swift */; };
+		371B30122B5E880F00004CDE /* MasterSettingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371B30112B5E880F00004CDE /* MasterSettingManager.swift */; };
+		371B30142B5E882300004CDE /* Recorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371B30132B5E882300004CDE /* Recorder.swift */; };
+		371B30162B5E883A00004CDE /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371B30152B5E883A00004CDE /* SoundPlayer.swift */; };
+		371B30182B5E884D00004CDE /* SoundSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371B30172B5E884D00004CDE /* SoundSource.swift */; };
+		371B301A2B5E886B00004CDE /* Symbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371B30192B5E886B00004CDE /* Symbol.swift */; };
+		371B30202B5E889E00004CDE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371B301F2B5E889E00004CDE /* ContentView.swift */; };
+		371B30222B5E88B000004CDE /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371B30212B5E88B000004CDE /* LandingView.swift */; };
+		371B30242B5E88D700004CDE /* PlaybackSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371B30232B5E88D700004CDE /* PlaybackSheetView.swift */; };
+		371B30262B5E88ED00004CDE /* PadButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371B30252B5E88ED00004CDE /* PadButton.swift */; };
+		371B30282B5E890000004CDE /* PadButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371B30272B5E890000004CDE /* PadButtonView.swift */; };
+		371B302A2B5E891200004CDE /* PadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371B30292B5E891200004CDE /* PadView.swift */; };
+		371B302C2B5E892500004CDE /* ButtonSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371B302B2B5E892500004CDE /* ButtonSettingView.swift */; };
+		371B302E2B5E893800004CDE /* HelpButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371B302D2B5E893800004CDE /* HelpButtonView.swift */; };
+		371B30302B5E895E00004CDE /* MasterSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371B302F2B5E895E00004CDE /* MasterSettingView.swift */; };
+		371B30322B5E896D00004CDE /* MuteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371B30312B5E896D00004CDE /* MuteButton.swift */; };
+		371B30342B5E897E00004CDE /* PlayButtionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371B30332B5E897E00004CDE /* PlayButtionView.swift */; };
+		371B30362B5E898F00004CDE /* RecordButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371B30352B5E898F00004CDE /* RecordButtonView.swift */; };
+		371B30382B5E899D00004CDE /* ResetButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371B30372B5E899D00004CDE /* ResetButtonView.swift */; };
+		371B303A2B5E89AC00004CDE /* SideBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371B30392B5E89AC00004CDE /* SideBar.swift */; };
+		371B303C2B5E89BF00004CDE /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371B303B2B5E89BF00004CDE /* EditView.swift */; };
+		371B303E2B5E89DA00004CDE /* RecordingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371B303D2B5E89DA00004CDE /* RecordingView.swift */; };
+		371B30402B5E89F300004CDE /* StopWatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371B303F2B5E89F300004CDE /* StopWatchView.swift */; };
+		371B30422B5E8A0300004CDE /* TuneSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371B30412B5E8A0300004CDE /* TuneSection.swift */; };
+		376AD5D82B82564200020400 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376AD5D72B82564200020400 /* Color.swift */; };
+		376AD5DA2B827E9300020400 /* FileListButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376AD5D92B827E9300020400 /* FileListButtonView.swift */; };
+		376AD5DE2B828A4A00020400 /* FileListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376AD5DD2B828A4A00020400 /* FileListView.swift */; };
+		376AD5E02B82A0F800020400 /* System.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376AD5DF2B82A0F800020400 /* System.swift */; };
+		376AD5E22B8352F500020400 /* RecordSoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376AD5E12B8352F500020400 /* RecordSoundView.swift */; };
+		376AD5E42B83563F00020400 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376AD5E32B83563F00020400 /* SettingView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3706C2562B5E7E01000F889B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3706C2262B5E7DFF000F889B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3706C22D2B5E7DFF000F889B;
+			remoteInfo = CreativePad;
+		};
+		3706C2602B5E7E01000F889B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3706C2262B5E7DFF000F889B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3706C22D2B5E7DFF000F889B;
+			remoteInfo = CreativePad;
+		};
+		3706C26D2B5E7E01000F889B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3706C2262B5E7DFF000F889B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3706C26A2B5E7E01000F889B;
+			remoteInfo = CreativePadExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3706C2A02B5E7E01000F889B /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3706C26C2B5E7E01000F889B /* CreativePadExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3706C22E2B5E7DFF000F889B /* CreativePad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CreativePad.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3706C2312B5E7DFF000F889B /* TemplateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateView.swift; sourceTree = "<group>"; };
+		3706C2352B5E7DFF000F889B /* ViewControllerRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerRepresentable.swift; sourceTree = "<group>"; };
+		3706C2382B5E7DFF000F889B /* Synth.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = Synth.aif; sourceTree = "<group>"; };
+		3706C23A2B5E7DFF000F889B /* SimplePlayEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplePlayEngine.swift; sourceTree = "<group>"; };
+		3706C23C2B5E7DFF000F889B /* TypeAliases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeAliases.swift; sourceTree = "<group>"; };
+		3706C23F2B5E7DFF000F889B /* StringHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringHelpers.swift; sourceTree = "<group>"; };
+		3706C2422B5E7DFF000F889B /* MIDIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIDIManager.swift; sourceTree = "<group>"; };
+		3706C2452B5E7DFF000F889B /* AudioUnitHostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioUnitHostModel.swift; sourceTree = "<group>"; };
+		3706C2472B5E7DFF000F889B /* AudioUnitViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioUnitViewModel.swift; sourceTree = "<group>"; };
+		3706C2492B5E7DFF000F889B /* CreativePadApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreativePadApp.swift; sourceTree = "<group>"; };
+		3706C24B2B5E7E01000F889B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3706C24E2B5E7E01000F889B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3706C2502B5E7E01000F889B /* CreativePad.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CreativePad.entitlements; sourceTree = "<group>"; };
+		3706C2552B5E7E01000F889B /* CreativePadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CreativePadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3706C2592B5E7E01000F889B /* CreativePadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreativePadTests.swift; sourceTree = "<group>"; };
+		3706C25F2B5E7E01000F889B /* CreativePadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CreativePadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3706C2632B5E7E01000F889B /* CreativePadUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreativePadUITests.swift; sourceTree = "<group>"; };
+		3706C2652B5E7E01000F889B /* CreativePadUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreativePadUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3706C26B2B5E7E01000F889B /* CreativePadExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CreativePadExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		3706C2702B5E7E01000F889B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		3706C2732B5E7E01000F889B /* CreativePadExtension-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CreativePadExtension-Bridging-Header.h"; sourceTree = "<group>"; };
+		3706C2752B5E7E01000F889B /* ParameterSpecBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterSpecBase.swift; sourceTree = "<group>"; };
+		3706C2782B5E7E01000F889B /* CrossPlatform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossPlatform.swift; sourceTree = "<group>"; };
+		3706C27A2B5E7E01000F889B /* String+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Utils.swift"; sourceTree = "<group>"; };
+		3706C27D2B5E7E01000F889B /* CreativePadExtensionAudioUnit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreativePadExtensionAudioUnit.h; sourceTree = "<group>"; };
+		3706C27E2B5E7E01000F889B /* CreativePadExtensionAudioUnit.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = CreativePadExtensionAudioUnit.mm; sourceTree = "<group>"; };
+		3706C2812B5E7E01000F889B /* CreativePadExtensionAUProcessHelper.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CreativePadExtensionAUProcessHelper.hpp; sourceTree = "<group>"; };
+		3706C2832B5E7E01000F889B /* CreativePadExtensionBufferedAudioBus.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CreativePadExtensionBufferedAudioBus.hpp; sourceTree = "<group>"; };
+		3706C2862B5E7E01000F889B /* CreativePadExtensionParameterAddresses.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreativePadExtensionParameterAddresses.h; sourceTree = "<group>"; };
+		3706C2872B5E7E01000F889B /* Parameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parameters.swift; sourceTree = "<group>"; };
+		3706C28A2B5E7E01000F889B /* CreativePadExtensionDSPKernel.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CreativePadExtensionDSPKernel.hpp; sourceTree = "<group>"; };
+		3706C28D2B5E7E01000F889B /* CreativePadExtensionMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreativePadExtensionMainView.swift; sourceTree = "<group>"; };
+		3706C28F2B5E7E01000F889B /* ParameterSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterSlider.swift; sourceTree = "<group>"; };
+		3706C2942B5E7E01000F889B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		3706C2962B5E7E01000F889B /* ObservableAUParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableAUParameter.swift; sourceTree = "<group>"; };
+		3706C2982B5E7E01000F889B /* AudioUnitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioUnitViewController.swift; sourceTree = "<group>"; };
+		3706C29A2B5E7E01000F889B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		371B300F2B5E87F700004CDE /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
+		371B30112B5E880F00004CDE /* MasterSettingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterSettingManager.swift; sourceTree = "<group>"; };
+		371B30132B5E882300004CDE /* Recorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recorder.swift; sourceTree = "<group>"; };
+		371B30152B5E883A00004CDE /* SoundPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
+		371B30172B5E884D00004CDE /* SoundSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundSource.swift; sourceTree = "<group>"; };
+		371B30192B5E886B00004CDE /* Symbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symbol.swift; sourceTree = "<group>"; };
+		371B301F2B5E889E00004CDE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		371B30212B5E88B000004CDE /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
+		371B30232B5E88D700004CDE /* PlaybackSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackSheetView.swift; sourceTree = "<group>"; };
+		371B30252B5E88ED00004CDE /* PadButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PadButton.swift; sourceTree = "<group>"; };
+		371B30272B5E890000004CDE /* PadButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PadButtonView.swift; sourceTree = "<group>"; };
+		371B30292B5E891200004CDE /* PadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PadView.swift; sourceTree = "<group>"; };
+		371B302B2B5E892500004CDE /* ButtonSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonSettingView.swift; sourceTree = "<group>"; };
+		371B302D2B5E893800004CDE /* HelpButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpButtonView.swift; sourceTree = "<group>"; };
+		371B302F2B5E895E00004CDE /* MasterSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterSettingView.swift; sourceTree = "<group>"; };
+		371B30312B5E896D00004CDE /* MuteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuteButton.swift; sourceTree = "<group>"; };
+		371B30332B5E897E00004CDE /* PlayButtionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayButtionView.swift; sourceTree = "<group>"; };
+		371B30352B5E898F00004CDE /* RecordButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordButtonView.swift; sourceTree = "<group>"; };
+		371B30372B5E899D00004CDE /* ResetButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetButtonView.swift; sourceTree = "<group>"; };
+		371B30392B5E89AC00004CDE /* SideBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBar.swift; sourceTree = "<group>"; };
+		371B303B2B5E89BF00004CDE /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
+		371B303D2B5E89DA00004CDE /* RecordingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingView.swift; sourceTree = "<group>"; };
+		371B303F2B5E89F300004CDE /* StopWatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchView.swift; sourceTree = "<group>"; };
+		371B30412B5E8A0300004CDE /* TuneSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TuneSection.swift; sourceTree = "<group>"; };
+		376AD5D72B82564200020400 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		376AD5D92B827E9300020400 /* FileListButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileListButtonView.swift; sourceTree = "<group>"; };
+		376AD5DD2B828A4A00020400 /* FileListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileListView.swift; sourceTree = "<group>"; };
+		376AD5DF2B82A0F800020400 /* System.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = System.swift; sourceTree = "<group>"; };
+		376AD5E12B8352F500020400 /* RecordSoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordSoundView.swift; sourceTree = "<group>"; };
+		376AD5E32B83563F00020400 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3706C22B2B5E7DFF000F889B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3706C2522B5E7E01000F889B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3706C25C2B5E7E01000F889B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3706C2682B5E7E01000F889B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3706C2252B5E7DFF000F889B = {
+			isa = PBXGroup;
+			children = (
+				3706C2302B5E7DFF000F889B /* CreativePad */,
+				3706C2582B5E7E01000F889B /* CreativePadTests */,
+				3706C2622B5E7E01000F889B /* CreativePadUITests */,
+				3706C26F2B5E7E01000F889B /* CreativePadExtension */,
+				3706C22F2B5E7DFF000F889B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3706C22F2B5E7DFF000F889B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3706C22E2B5E7DFF000F889B /* CreativePad.app */,
+				3706C2552B5E7E01000F889B /* CreativePadTests.xctest */,
+				3706C25F2B5E7E01000F889B /* CreativePadUITests.xctest */,
+				3706C26B2B5E7E01000F889B /* CreativePadExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3706C2302B5E7DFF000F889B /* CreativePad */ = {
+			isa = PBXGroup;
+			children = (
+				371B300E2B5E87A900004CDE /* System */,
+				371B300D2B5E86F700004CDE /* Views */,
+				3706C2312B5E7DFF000F889B /* TemplateView.swift */,
+				3706C2492B5E7DFF000F889B /* CreativePadApp.swift */,
+				3706C24B2B5E7E01000F889B /* Assets.xcassets */,
+				3706C2502B5E7E01000F889B /* CreativePad.entitlements */,
+				3706C2332B5E7DFF000F889B /* Common */,
+				3706C2442B5E7DFF000F889B /* Model */,
+				3706C24D2B5E7E01000F889B /* Preview Content */,
+			);
+			path = CreativePad;
+			sourceTree = "<group>";
+		};
+		3706C2332B5E7DFF000F889B /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				3706C23C2B5E7DFF000F889B /* TypeAliases.swift */,
+				3706C2342B5E7DFF000F889B /* UI */,
+				3706C2372B5E7DFF000F889B /* Audio */,
+				3706C23E2B5E7DFF000F889B /* String */,
+				3706C2412B5E7DFF000F889B /* MIDI */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		3706C2342B5E7DFF000F889B /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				3706C2352B5E7DFF000F889B /* ViewControllerRepresentable.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		3706C2372B5E7DFF000F889B /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				3706C2382B5E7DFF000F889B /* Synth.aif */,
+				3706C23A2B5E7DFF000F889B /* SimplePlayEngine.swift */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		3706C23E2B5E7DFF000F889B /* String */ = {
+			isa = PBXGroup;
+			children = (
+				3706C23F2B5E7DFF000F889B /* StringHelpers.swift */,
+			);
+			path = String;
+			sourceTree = "<group>";
+		};
+		3706C2412B5E7DFF000F889B /* MIDI */ = {
+			isa = PBXGroup;
+			children = (
+				3706C2422B5E7DFF000F889B /* MIDIManager.swift */,
+			);
+			path = MIDI;
+			sourceTree = "<group>";
+		};
+		3706C2442B5E7DFF000F889B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3706C2452B5E7DFF000F889B /* AudioUnitHostModel.swift */,
+				3706C2472B5E7DFF000F889B /* AudioUnitViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3706C24D2B5E7E01000F889B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3706C24E2B5E7E01000F889B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3706C2582B5E7E01000F889B /* CreativePadTests */ = {
+			isa = PBXGroup;
+			children = (
+				3706C2592B5E7E01000F889B /* CreativePadTests.swift */,
+			);
+			path = CreativePadTests;
+			sourceTree = "<group>";
+		};
+		3706C2622B5E7E01000F889B /* CreativePadUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3706C2632B5E7E01000F889B /* CreativePadUITests.swift */,
+				3706C2652B5E7E01000F889B /* CreativePadUITestsLaunchTests.swift */,
+			);
+			path = CreativePadUITests;
+			sourceTree = "<group>";
+		};
+		3706C26F2B5E7E01000F889B /* CreativePadExtension */ = {
+			isa = PBXGroup;
+			children = (
+				3706C2702B5E7E01000F889B /* README.md */,
+				3706C29A2B5E7E01000F889B /* Info.plist */,
+				3706C2722B5E7E01000F889B /* Common */,
+				3706C2852B5E7E01000F889B /* Parameters */,
+				3706C2892B5E7E01000F889B /* DSP */,
+				3706C28C2B5E7E01000F889B /* UI */,
+			);
+			path = CreativePadExtension;
+			sourceTree = "<group>";
+		};
+		3706C2722B5E7E01000F889B /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				3706C2732B5E7E01000F889B /* CreativePadExtension-Bridging-Header.h */,
+				3706C2742B5E7E01000F889B /* Parameters */,
+				3706C2772B5E7E01000F889B /* Utility */,
+				3706C27C2B5E7E01000F889B /* Audio Unit */,
+				3706C2802B5E7E01000F889B /* DSP */,
+				3706C2912B5E7E01000F889B /* UI */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		3706C2742B5E7E01000F889B /* Parameters */ = {
+			isa = PBXGroup;
+			children = (
+				3706C2752B5E7E01000F889B /* ParameterSpecBase.swift */,
+			);
+			path = Parameters;
+			sourceTree = "<group>";
+		};
+		3706C2772B5E7E01000F889B /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				3706C2782B5E7E01000F889B /* CrossPlatform.swift */,
+				3706C27A2B5E7E01000F889B /* String+Utils.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		3706C27C2B5E7E01000F889B /* Audio Unit */ = {
+			isa = PBXGroup;
+			children = (
+				3706C27D2B5E7E01000F889B /* CreativePadExtensionAudioUnit.h */,
+				3706C27E2B5E7E01000F889B /* CreativePadExtensionAudioUnit.mm */,
+			);
+			path = "Audio Unit";
+			sourceTree = "<group>";
+		};
+		3706C2802B5E7E01000F889B /* DSP */ = {
+			isa = PBXGroup;
+			children = (
+				3706C2812B5E7E01000F889B /* CreativePadExtensionAUProcessHelper.hpp */,
+				3706C2832B5E7E01000F889B /* CreativePadExtensionBufferedAudioBus.hpp */,
+			);
+			path = DSP;
+			sourceTree = "<group>";
+		};
+		3706C2852B5E7E01000F889B /* Parameters */ = {
+			isa = PBXGroup;
+			children = (
+				3706C2862B5E7E01000F889B /* CreativePadExtensionParameterAddresses.h */,
+				3706C2872B5E7E01000F889B /* Parameters.swift */,
+			);
+			path = Parameters;
+			sourceTree = "<group>";
+		};
+		3706C2892B5E7E01000F889B /* DSP */ = {
+			isa = PBXGroup;
+			children = (
+				3706C28A2B5E7E01000F889B /* CreativePadExtensionDSPKernel.hpp */,
+			);
+			path = DSP;
+			sourceTree = "<group>";
+		};
+		3706C28C2B5E7E01000F889B /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				3706C28D2B5E7E01000F889B /* CreativePadExtensionMainView.swift */,
+				3706C28F2B5E7E01000F889B /* ParameterSlider.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		3706C2912B5E7E01000F889B /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				3706C2962B5E7E01000F889B /* ObservableAUParameter.swift */,
+				3706C2982B5E7E01000F889B /* AudioUnitViewController.swift */,
+				3706C2922B5E7E01000F889B /* Base.lproj */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		3706C2922B5E7E01000F889B /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				3706C2932B5E7E01000F889B /* MainInterface.storyboard */,
+			);
+			path = Base.lproj;
+			sourceTree = "<group>";
+		};
+		371B300D2B5E86F700004CDE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				371B301E2B5E888700004CDE /* TuneSection */,
+				371B301D2B5E888000004CDE /* SideBar */,
+				371B301C2B5E887B00004CDE /* Pad */,
+				371B301B2B5E887600004CDE /* Modal */,
+				371B301F2B5E889E00004CDE /* ContentView.swift */,
+				371B30212B5E88B000004CDE /* LandingView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		371B300E2B5E87A900004CDE /* System */ = {
+			isa = PBXGroup;
+			children = (
+				371B300F2B5E87F700004CDE /* AudioPlayer.swift */,
+				371B30112B5E880F00004CDE /* MasterSettingManager.swift */,
+				371B30132B5E882300004CDE /* Recorder.swift */,
+				371B30152B5E883A00004CDE /* SoundPlayer.swift */,
+				371B30172B5E884D00004CDE /* SoundSource.swift */,
+				371B30192B5E886B00004CDE /* Symbol.swift */,
+				376AD5D72B82564200020400 /* Color.swift */,
+				376AD5DF2B82A0F800020400 /* System.swift */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		371B301B2B5E887600004CDE /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				371B30232B5E88D700004CDE /* PlaybackSheetView.swift */,
+				376AD5E12B8352F500020400 /* RecordSoundView.swift */,
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		371B301C2B5E887B00004CDE /* Pad */ = {
+			isa = PBXGroup;
+			children = (
+				371B30252B5E88ED00004CDE /* PadButton.swift */,
+				371B30272B5E890000004CDE /* PadButtonView.swift */,
+				371B30292B5E891200004CDE /* PadView.swift */,
+			);
+			path = Pad;
+			sourceTree = "<group>";
+		};
+		371B301D2B5E888000004CDE /* SideBar */ = {
+			isa = PBXGroup;
+			children = (
+				371B30332B5E897E00004CDE /* PlayButtionView.swift */,
+				371B30372B5E899D00004CDE /* ResetButtonView.swift */,
+				371B30312B5E896D00004CDE /* MuteButton.swift */,
+				371B30352B5E898F00004CDE /* RecordButtonView.swift */,
+				371B302B2B5E892500004CDE /* ButtonSettingView.swift */,
+				371B302F2B5E895E00004CDE /* MasterSettingView.swift */,
+				376AD5D92B827E9300020400 /* FileListButtonView.swift */,
+				371B302D2B5E893800004CDE /* HelpButtonView.swift */,
+				371B30392B5E89AC00004CDE /* SideBar.swift */,
+			);
+			path = SideBar;
+			sourceTree = "<group>";
+		};
+		371B301E2B5E888700004CDE /* TuneSection */ = {
+			isa = PBXGroup;
+			children = (
+				371B303D2B5E89DA00004CDE /* RecordingView.swift */,
+				371B303F2B5E89F300004CDE /* StopWatchView.swift */,
+				371B303B2B5E89BF00004CDE /* EditView.swift */,
+				376AD5E32B83563F00020400 /* SettingView.swift */,
+				376AD5DD2B828A4A00020400 /* FileListView.swift */,
+				371B30412B5E8A0300004CDE /* TuneSection.swift */,
+			);
+			path = TuneSection;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3706C22D2B5E7DFF000F889B /* CreativePad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3706C2A12B5E7E01000F889B /* Build configuration list for PBXNativeTarget "CreativePad" */;
+			buildPhases = (
+				3706C22A2B5E7DFF000F889B /* Sources */,
+				3706C22B2B5E7DFF000F889B /* Frameworks */,
+				3706C22C2B5E7DFF000F889B /* Resources */,
+				3706C2A02B5E7E01000F889B /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3706C26E2B5E7E01000F889B /* PBXTargetDependency */,
+			);
+			name = CreativePad;
+			productName = CreativePad;
+			productReference = 3706C22E2B5E7DFF000F889B /* CreativePad.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3706C2542B5E7E01000F889B /* CreativePadTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3706C2A42B5E7E01000F889B /* Build configuration list for PBXNativeTarget "CreativePadTests" */;
+			buildPhases = (
+				3706C2512B5E7E01000F889B /* Sources */,
+				3706C2522B5E7E01000F889B /* Frameworks */,
+				3706C2532B5E7E01000F889B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3706C2572B5E7E01000F889B /* PBXTargetDependency */,
+			);
+			name = CreativePadTests;
+			productName = CreativePadTests;
+			productReference = 3706C2552B5E7E01000F889B /* CreativePadTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3706C25E2B5E7E01000F889B /* CreativePadUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3706C2A72B5E7E01000F889B /* Build configuration list for PBXNativeTarget "CreativePadUITests" */;
+			buildPhases = (
+				3706C25B2B5E7E01000F889B /* Sources */,
+				3706C25C2B5E7E01000F889B /* Frameworks */,
+				3706C25D2B5E7E01000F889B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3706C2612B5E7E01000F889B /* PBXTargetDependency */,
+			);
+			name = CreativePadUITests;
+			productName = CreativePadUITests;
+			productReference = 3706C25F2B5E7E01000F889B /* CreativePadUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		3706C26A2B5E7E01000F889B /* CreativePadExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3706C29D2B5E7E01000F889B /* Build configuration list for PBXNativeTarget "CreativePadExtension" */;
+			buildPhases = (
+				3706C2672B5E7E01000F889B /* Sources */,
+				3706C2682B5E7E01000F889B /* Frameworks */,
+				3706C2692B5E7E01000F889B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CreativePadExtension;
+			productName = CreativePadExtension;
+			productReference = 3706C26B2B5E7E01000F889B /* CreativePadExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3706C2262B5E7DFF000F889B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					3706C22D2B5E7DFF000F889B = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					3706C2542B5E7E01000F889B = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 3706C22D2B5E7DFF000F889B;
+					};
+					3706C25E2B5E7E01000F889B = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 3706C22D2B5E7DFF000F889B;
+					};
+					3706C26A2B5E7E01000F889B = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = 3706C2292B5E7DFF000F889B /* Build configuration list for PBXProject "CreativePad" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3706C2252B5E7DFF000F889B;
+			productRefGroup = 3706C22F2B5E7DFF000F889B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3706C22D2B5E7DFF000F889B /* CreativePad */,
+				3706C2542B5E7E01000F889B /* CreativePadTests */,
+				3706C25E2B5E7E01000F889B /* CreativePadUITests */,
+				3706C26A2B5E7E01000F889B /* CreativePadExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3706C22C2B5E7DFF000F889B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3706C24C2B5E7E01000F889B /* Assets.xcassets in Resources */,
+				3706C24F2B5E7E01000F889B /* Preview Assets.xcassets in Resources */,
+				3706C2392B5E7DFF000F889B /* Synth.aif in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3706C2532B5E7E01000F889B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3706C25D2B5E7E01000F889B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3706C2692B5E7E01000F889B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3706C28B2B5E7E01000F889B /* CreativePadExtensionDSPKernel.hpp in Resources */,
+				3706C2952B5E7E01000F889B /* MainInterface.storyboard in Resources */,
+				3706C2712B5E7E01000F889B /* README.md in Resources */,
+				3706C2842B5E7E01000F889B /* CreativePadExtensionBufferedAudioBus.hpp in Resources */,
+				3706C2822B5E7E01000F889B /* CreativePadExtensionAUProcessHelper.hpp in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3706C22A2B5E7DFF000F889B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				371B30162B5E883A00004CDE /* SoundPlayer.swift in Sources */,
+				3706C24A2B5E7DFF000F889B /* CreativePadApp.swift in Sources */,
+				371B30202B5E889E00004CDE /* ContentView.swift in Sources */,
+				376AD5E02B82A0F800020400 /* System.swift in Sources */,
+				3706C2462B5E7DFF000F889B /* AudioUnitHostModel.swift in Sources */,
+				371B30342B5E897E00004CDE /* PlayButtionView.swift in Sources */,
+				371B302E2B5E893800004CDE /* HelpButtonView.swift in Sources */,
+				371B30402B5E89F300004CDE /* StopWatchView.swift in Sources */,
+				371B30122B5E880F00004CDE /* MasterSettingManager.swift in Sources */,
+				371B302A2B5E891200004CDE /* PadView.swift in Sources */,
+				371B30142B5E882300004CDE /* Recorder.swift in Sources */,
+				371B30222B5E88B000004CDE /* LandingView.swift in Sources */,
+				371B30242B5E88D700004CDE /* PlaybackSheetView.swift in Sources */,
+				3706C2482B5E7DFF000F889B /* AudioUnitViewModel.swift in Sources */,
+				371B30362B5E898F00004CDE /* RecordButtonView.swift in Sources */,
+				371B303A2B5E89AC00004CDE /* SideBar.swift in Sources */,
+				371B303E2B5E89DA00004CDE /* RecordingView.swift in Sources */,
+				3706C2402B5E7DFF000F889B /* StringHelpers.swift in Sources */,
+				371B30282B5E890000004CDE /* PadButtonView.swift in Sources */,
+				3706C23D2B5E7DFF000F889B /* TypeAliases.swift in Sources */,
+				371B30322B5E896D00004CDE /* MuteButton.swift in Sources */,
+				376AD5DA2B827E9300020400 /* FileListButtonView.swift in Sources */,
+				371B30182B5E884D00004CDE /* SoundSource.swift in Sources */,
+				376AD5E22B8352F500020400 /* RecordSoundView.swift in Sources */,
+				376AD5D82B82564200020400 /* Color.swift in Sources */,
+				371B30262B5E88ED00004CDE /* PadButton.swift in Sources */,
+				3706C2432B5E7DFF000F889B /* MIDIManager.swift in Sources */,
+				3706C2322B5E7DFF000F889B /* TemplateView.swift in Sources */,
+				371B301A2B5E886B00004CDE /* Symbol.swift in Sources */,
+				371B30102B5E87F700004CDE /* AudioPlayer.swift in Sources */,
+				371B302C2B5E892500004CDE /* ButtonSettingView.swift in Sources */,
+				3706C2362B5E7DFF000F889B /* ViewControllerRepresentable.swift in Sources */,
+				371B303C2B5E89BF00004CDE /* EditView.swift in Sources */,
+				3706C23B2B5E7DFF000F889B /* SimplePlayEngine.swift in Sources */,
+				376AD5DE2B828A4A00020400 /* FileListView.swift in Sources */,
+				371B30422B5E8A0300004CDE /* TuneSection.swift in Sources */,
+				371B30382B5E899D00004CDE /* ResetButtonView.swift in Sources */,
+				371B30302B5E895E00004CDE /* MasterSettingView.swift in Sources */,
+				376AD5E42B83563F00020400 /* SettingView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3706C2512B5E7E01000F889B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3706C25A2B5E7E01000F889B /* CreativePadTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3706C25B2B5E7E01000F889B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3706C2642B5E7E01000F889B /* CreativePadUITests.swift in Sources */,
+				3706C2662B5E7E01000F889B /* CreativePadUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3706C2672B5E7E01000F889B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3706C2882B5E7E01000F889B /* Parameters.swift in Sources */,
+				3706C2762B5E7E01000F889B /* ParameterSpecBase.swift in Sources */,
+				3706C2972B5E7E01000F889B /* ObservableAUParameter.swift in Sources */,
+				3706C28E2B5E7E01000F889B /* CreativePadExtensionMainView.swift in Sources */,
+				3706C2792B5E7E01000F889B /* CrossPlatform.swift in Sources */,
+				3706C2992B5E7E01000F889B /* AudioUnitViewController.swift in Sources */,
+				3706C2902B5E7E01000F889B /* ParameterSlider.swift in Sources */,
+				3706C27F2B5E7E01000F889B /* CreativePadExtensionAudioUnit.mm in Sources */,
+				3706C27B2B5E7E01000F889B /* String+Utils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3706C2572B5E7E01000F889B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3706C22D2B5E7DFF000F889B /* CreativePad */;
+			targetProxy = 3706C2562B5E7E01000F889B /* PBXContainerItemProxy */;
+		};
+		3706C2612B5E7E01000F889B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3706C22D2B5E7DFF000F889B /* CreativePad */;
+			targetProxy = 3706C2602B5E7E01000F889B /* PBXContainerItemProxy */;
+		};
+		3706C26E2B5E7E01000F889B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3706C26A2B5E7E01000F889B /* CreativePadExtension */;
+			targetProxy = 3706C26D2B5E7E01000F889B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3706C2932B5E7E01000F889B /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3706C2942B5E7E01000F889B /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3706C29B2B5E7E01000F889B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = CreativePad/CreativePad.entitlements;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3706C29C2B5E7E01000F889B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = CreativePad/CreativePad.entitlements;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3706C29E2B5E7E01000F889B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UBAV753C5G;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CreativePadExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CreativePadExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = wwdc2024.CreativePad.CreativePadExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "CreativePadExtension/Common/CreativePadExtension-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3706C29F2B5E7E01000F889B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UBAV753C5G;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CreativePadExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CreativePadExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = wwdc2024.CreativePad.CreativePadExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "CreativePadExtension/Common/CreativePadExtension-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3706C2A22B5E7E01000F889B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CreativePad/Preview Content\"";
+				DEVELOPMENT_TEAM = UBAV753C5G;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = wwdc2024.CreativePad;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		3706C2A32B5E7E01000F889B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CreativePad/Preview Content\"";
+				DEVELOPMENT_TEAM = UBAV753C5G;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = wwdc2024.CreativePad;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+		3706C2A52B5E7E01000F889B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UBAV753C5G;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = wwdc2024.CreativePadTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CreativePad.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CreativePad";
+			};
+			name = Debug;
+		};
+		3706C2A62B5E7E01000F889B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UBAV753C5G;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = wwdc2024.CreativePadTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CreativePad.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CreativePad";
+			};
+			name = Release;
+		};
+		3706C2A82B5E7E01000F889B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UBAV753C5G;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = wwdc2024.CreativePadUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CreativePad;
+			};
+			name = Debug;
+		};
+		3706C2A92B5E7E01000F889B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UBAV753C5G;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = wwdc2024.CreativePadUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CreativePad;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3706C2292B5E7DFF000F889B /* Build configuration list for PBXProject "CreativePad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3706C29B2B5E7E01000F889B /* Debug */,
+				3706C29C2B5E7E01000F889B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3706C29D2B5E7E01000F889B /* Build configuration list for PBXNativeTarget "CreativePadExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3706C29E2B5E7E01000F889B /* Debug */,
+				3706C29F2B5E7E01000F889B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3706C2A12B5E7E01000F889B /* Build configuration list for PBXNativeTarget "CreativePad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3706C2A22B5E7E01000F889B /* Debug */,
+				3706C2A32B5E7E01000F889B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3706C2A42B5E7E01000F889B /* Build configuration list for PBXNativeTarget "CreativePadTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3706C2A52B5E7E01000F889B /* Debug */,
+				3706C2A62B5E7E01000F889B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3706C2A72B5E7E01000F889B /* Build configuration list for PBXNativeTarget "CreativePadUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3706C2A82B5E7E01000F889B /* Debug */,
+				3706C2A92B5E7E01000F889B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3706C2262B5E7DFF000F889B /* Project object */;
+}
