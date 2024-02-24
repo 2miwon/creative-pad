@@ -5,12 +5,23 @@ struct SettingView: View {
     
     var body: some View {
         VStack{
-            Text("()")
-            Text("()")
-            Text("()")
+            Group {
+                HStack {
+                    Text("Master Volume")
+                    Slider(value: $masterSetting.masterVolumn)
+                }
+                HStack{
+                    Toggle("Mute", isOn: $masterSetting.isMute )
+                }
+                HStack{
+                    Toggle("Mic Record Auto Save", isOn: $masterSetting.autoSave )
+                }
+                Spacer()
+                Text("Made By Heewon Lim")
+            }
+            .padding(3)
+            .foregroundColor(.white)
         }
-        .background(.blue)
-            
     }
 }
 
@@ -20,6 +31,7 @@ struct SettingView_Previews: PreviewProvider {
         SettingView()
             .environmentObject(SettingManager())
             .scaledToFit()
+            .background(.black)
     }
 }
 

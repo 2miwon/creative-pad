@@ -2,13 +2,19 @@ import SwiftUI
 
 struct ResetButton: View {
     @EnvironmentObject var masterSetting : SettingManager
-
+    @ObservedObject var tracker: ButtonTracker
+    
+    init(tracker: ButtonTracker){
+        self.tracker = tracker
+    }
+    
     var body: some View {
         Button{
             if available() {
                 withAnimation(nil){
                     masterSetting.isPausing = true
-                    masterSetting.allRecording = false
+//                    masterSetting.allRecording = false
+                    tracker.allStop()
                 }
             }
         } label: {
@@ -31,7 +37,7 @@ struct ResetButton: View {
 
 struct ResetButton_Previews: PreviewProvider {
     static var previews: some View {
-        ResetButton()
+        ResetButton(tracker: ButtonTracker(num: 36))
             .background(.black)
             .environmentObject(SettingManager())
     }

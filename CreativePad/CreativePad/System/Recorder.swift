@@ -13,6 +13,19 @@ enum States: String {
          off = "off"
 }
 
+struct Visualizer: View {
+    var value: CGFloat
+    
+    var body: some View {
+        ZStack {
+            RoundedRectangle(cornerRadius: 5)
+                .fill(Color.red)
+                .frame(width: 1, height: value)
+                .accessibilityLabel("Bar height \(value)")
+        }
+    }
+}
+
 class Recorder: ObservableObject {
     static var engine = AVAudioEngine()
     static var fileExtension = ".caf"
@@ -49,7 +62,7 @@ class Recorder: ObservableObject {
             return true
         }
         
-//        createRecordingFile()
+        createRecordingFile()
         recordingStartTime = Date.timeIntervalSinceReferenceDate
         
         DispatchQueue.main.asyncAfter(deadline: .now()) { [self] in
@@ -75,10 +88,10 @@ class Recorder: ObservableObject {
                 let rms = self.calcRootMeanSquare(values: channelDataValueArray, n: buffer.frameLength)
                 let dec = self.convertToDecibel(rms)
                 let sampleHeight = self.calcPower(power: dec)
-                DispatchQueue.main.async {
-                    self.newSamples = self.shiftLeft()
-                    self.newSamples[self.countSamples-1] = SampleValue(value: sampleHeight)
-                }
+//                DispatchQueue.main.async {
+//                    self.newSamples = self.shiftLeft()
+//                    self.newSamples[self.countSamples-1] = SampleValue(value: sampleHeight)
+//                }
             }
 
             timerRecording = Timer.scheduledTimer(withTimeInterval: 0.01, repeats: true) { _ in
@@ -97,7 +110,7 @@ class Recorder: ObservableObject {
     }
     
     private func createRecordingFile() {
-        if let url = self.pathURL?.appendingPathComponent("Untitled" + Recorder.fileExtension) {
+        if let url = self.pathURL?.appendingPathComponent(currentDateTimeString() + Recorder.fileExtension) {
             let format = Recorder.engine.outputNode.inputFormat(forBus: 0)
             do {
                 self.recordingFile = try AVAudioFile(forWriting: url, settings:format.settings)
@@ -195,19 +208,6 @@ class Recorder: ObservableObject {
         timerPlayback?.invalidate()
         isPlaying = .completed
         progressTimePlayback = progressTimeRecording
-    }
-}
-
-struct Visualizer: View {
-    var value: CGFloat
-    
-    var body: some View {
-        ZStack {
-            RoundedRectangle(cornerRadius: 5)
-                .fill(Color.red)
-                .frame(width: 1, height: value)
-                .accessibilityLabel("Bar height \(value)")
-        }
     }
 }
 

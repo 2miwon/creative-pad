@@ -9,7 +9,6 @@ struct MasterSetting: View {
                 masterSetting.isSetting.toggle()
                 masterSetting.isEditing = false
                 masterSetting.isFile = false
-                
             }
         } label: {
             Image(systemName: "gearshape")

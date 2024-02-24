@@ -26,7 +26,7 @@ struct FileListButton: View {
     
     func available() -> Bool {
         return
-            !masterSetting.isRecording
+            !masterSetting.allRecording
     }
 }
 

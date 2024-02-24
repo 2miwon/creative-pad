@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3706C2322B5E7DFF000F889B /* TemplateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3706C2312B5E7DFF000F889B /* TemplateView.swift */; };
 		3706C2362B5E7DFF000F889B /* ViewControllerRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3706C2352B5E7DFF000F889B /* ViewControllerRepresentable.swift */; };
 		3706C2392B5E7DFF000F889B /* Synth.aif in Resources */ = {isa = PBXBuildFile; fileRef = 3706C2382B5E7DFF000F889B /* Synth.aif */; };
 		3706C23B2B5E7DFF000F889B /* SimplePlayEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3706C23A2B5E7DFF000F889B /* SimplePlayEngine.swift */; };
@@ -41,7 +40,6 @@
 		371B30122B5E880F00004CDE /* MasterSettingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371B30112B5E880F00004CDE /* MasterSettingManager.swift */; };
 		371B30142B5E882300004CDE /* Recorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371B30132B5E882300004CDE /* Recorder.swift */; };
 		371B30162B5E883A00004CDE /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371B30152B5E883A00004CDE /* SoundPlayer.swift */; };
-		371B30182B5E884D00004CDE /* SoundSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371B30172B5E884D00004CDE /* SoundSource.swift */; };
 		371B301A2B5E886B00004CDE /* Symbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371B30192B5E886B00004CDE /* Symbol.swift */; };
 		371B30202B5E889E00004CDE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371B301F2B5E889E00004CDE /* ContentView.swift */; };
 		371B30222B5E88B000004CDE /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371B30212B5E88B000004CDE /* LandingView.swift */; };
@@ -64,9 +62,11 @@
 		376AD5D82B82564200020400 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376AD5D72B82564200020400 /* Color.swift */; };
 		376AD5DA2B827E9300020400 /* FileListButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376AD5D92B827E9300020400 /* FileListButtonView.swift */; };
 		376AD5DE2B828A4A00020400 /* FileListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376AD5DD2B828A4A00020400 /* FileListView.swift */; };
-		376AD5E02B82A0F800020400 /* System.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376AD5DF2B82A0F800020400 /* System.swift */; };
 		376AD5E22B8352F500020400 /* RecordSoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376AD5E12B8352F500020400 /* RecordSoundView.swift */; };
 		376AD5E42B83563F00020400 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376AD5E32B83563F00020400 /* SettingView.swift */; };
+		376AD5E62B8358DC00020400 /* FileDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376AD5E52B8358DC00020400 /* FileDetailView.swift */; };
+		376AD5E82B8382A100020400 /* MicRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376AD5E72B8382A100020400 /* MicRecorder.swift */; };
+		37D660DC2B84BAAC002DC8E5 /* PermissionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D660DB2B84BAAC002DC8E5 /* PermissionManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,7 +109,6 @@
 
 /* Begin PBXFileReference section */
 		3706C22E2B5E7DFF000F889B /* CreativePad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CreativePad.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3706C2312B5E7DFF000F889B /* TemplateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateView.swift; sourceTree = "<group>"; };
 		3706C2352B5E7DFF000F889B /* ViewControllerRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerRepresentable.swift; sourceTree = "<group>"; };
 		3706C2382B5E7DFF000F889B /* Synth.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = Synth.aif; sourceTree = "<group>"; };
 		3706C23A2B5E7DFF000F889B /* SimplePlayEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplePlayEngine.swift; sourceTree = "<group>"; };
@@ -150,7 +149,6 @@
 		371B30112B5E880F00004CDE /* MasterSettingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterSettingManager.swift; sourceTree = "<group>"; };
 		371B30132B5E882300004CDE /* Recorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recorder.swift; sourceTree = "<group>"; };
 		371B30152B5E883A00004CDE /* SoundPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
-		371B30172B5E884D00004CDE /* SoundSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundSource.swift; sourceTree = "<group>"; };
 		371B30192B5E886B00004CDE /* Symbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symbol.swift; sourceTree = "<group>"; };
 		371B301F2B5E889E00004CDE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		371B30212B5E88B000004CDE /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
@@ -173,9 +171,12 @@
 		376AD5D72B82564200020400 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		376AD5D92B827E9300020400 /* FileListButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileListButtonView.swift; sourceTree = "<group>"; };
 		376AD5DD2B828A4A00020400 /* FileListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileListView.swift; sourceTree = "<group>"; };
-		376AD5DF2B82A0F800020400 /* System.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = System.swift; sourceTree = "<group>"; };
 		376AD5E12B8352F500020400 /* RecordSoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordSoundView.swift; sourceTree = "<group>"; };
 		376AD5E32B83563F00020400 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		376AD5E52B8358DC00020400 /* FileDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileDetailView.swift; sourceTree = "<group>"; };
+		376AD5E72B8382A100020400 /* MicRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicRecorder.swift; sourceTree = "<group>"; };
+		37D660DB2B84BAAC002DC8E5 /* PermissionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionManager.swift; sourceTree = "<group>"; };
+		37D660DD2B854C7A002DC8E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -235,9 +236,9 @@
 		3706C2302B5E7DFF000F889B /* CreativePad */ = {
 			isa = PBXGroup;
 			children = (
+				37D660DD2B854C7A002DC8E5 /* Info.plist */,
 				371B300E2B5E87A900004CDE /* System */,
 				371B300D2B5E86F700004CDE /* Views */,
-				3706C2312B5E7DFF000F889B /* TemplateView.swift */,
 				3706C2492B5E7DFF000F889B /* CreativePadApp.swift */,
 				3706C24B2B5E7E01000F889B /* Assets.xcassets */,
 				3706C2502B5E7E01000F889B /* CreativePad.entitlements */,
@@ -441,6 +442,7 @@
 				371B301B2B5E887600004CDE /* Modal */,
 				371B301F2B5E889E00004CDE /* ContentView.swift */,
 				371B30212B5E88B000004CDE /* LandingView.swift */,
+				37D660DB2B84BAAC002DC8E5 /* PermissionManager.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -450,12 +452,11 @@
 			children = (
 				371B300F2B5E87F700004CDE /* AudioPlayer.swift */,
 				371B30112B5E880F00004CDE /* MasterSettingManager.swift */,
-				371B30132B5E882300004CDE /* Recorder.swift */,
 				371B30152B5E883A00004CDE /* SoundPlayer.swift */,
-				371B30172B5E884D00004CDE /* SoundSource.swift */,
 				371B30192B5E886B00004CDE /* Symbol.swift */,
 				376AD5D72B82564200020400 /* Color.swift */,
-				376AD5DF2B82A0F800020400 /* System.swift */,
+				371B30132B5E882300004CDE /* Recorder.swift */,
+				376AD5E72B8382A100020400 /* MicRecorder.swift */,
 			);
 			path = System;
 			sourceTree = "<group>";
@@ -503,6 +504,7 @@
 				371B303B2B5E89BF00004CDE /* EditView.swift */,
 				376AD5E32B83563F00020400 /* SettingView.swift */,
 				376AD5DD2B828A4A00020400 /* FileListView.swift */,
+				376AD5E52B8358DC00020400 /* FileDetailView.swift */,
 				371B30412B5E8A0300004CDE /* TuneSection.swift */,
 			);
 			path = TuneSection;
@@ -677,11 +679,11 @@
 				371B30162B5E883A00004CDE /* SoundPlayer.swift in Sources */,
 				3706C24A2B5E7DFF000F889B /* CreativePadApp.swift in Sources */,
 				371B30202B5E889E00004CDE /* ContentView.swift in Sources */,
-				376AD5E02B82A0F800020400 /* System.swift in Sources */,
 				3706C2462B5E7DFF000F889B /* AudioUnitHostModel.swift in Sources */,
 				371B30342B5E897E00004CDE /* PlayButtionView.swift in Sources */,
 				371B302E2B5E893800004CDE /* HelpButtonView.swift in Sources */,
 				371B30402B5E89F300004CDE /* StopWatchView.swift in Sources */,
+				376AD5E82B8382A100020400 /* MicRecorder.swift in Sources */,
 				371B30122B5E880F00004CDE /* MasterSettingManager.swift in Sources */,
 				371B302A2B5E891200004CDE /* PadView.swift in Sources */,
 				371B30142B5E882300004CDE /* Recorder.swift in Sources */,
@@ -696,14 +698,14 @@
 				3706C23D2B5E7DFF000F889B /* TypeAliases.swift in Sources */,
 				371B30322B5E896D00004CDE /* MuteButton.swift in Sources */,
 				376AD5DA2B827E9300020400 /* FileListButtonView.swift in Sources */,
-				371B30182B5E884D00004CDE /* SoundSource.swift in Sources */,
 				376AD5E22B8352F500020400 /* RecordSoundView.swift in Sources */,
 				376AD5D82B82564200020400 /* Color.swift in Sources */,
 				371B30262B5E88ED00004CDE /* PadButton.swift in Sources */,
 				3706C2432B5E7DFF000F889B /* MIDIManager.swift in Sources */,
-				3706C2322B5E7DFF000F889B /* TemplateView.swift in Sources */,
 				371B301A2B5E886B00004CDE /* Symbol.swift in Sources */,
+				376AD5E62B8358DC00020400 /* FileDetailView.swift in Sources */,
 				371B30102B5E87F700004CDE /* AudioPlayer.swift in Sources */,
+				37D660DC2B84BAAC002DC8E5 /* PermissionManager.swift in Sources */,
 				371B302C2B5E892500004CDE /* ButtonSettingView.swift in Sources */,
 				3706C2362B5E7DFF000F889B /* ViewControllerRepresentable.swift in Sources */,
 				371B303C2B5E89BF00004CDE /* EditView.swift in Sources */,
@@ -970,6 +972,9 @@
 				DEVELOPMENT_TEAM = UBAV753C5G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CreativePad/Info.plist;
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Your recordings are not shared and are only used within the app";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -1003,6 +1008,9 @@
 				DEVELOPMENT_TEAM = UBAV753C5G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CreativePad/Info.plist;
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Your recordings are not shared and are only used within the app";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

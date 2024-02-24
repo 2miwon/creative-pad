@@ -2,6 +2,45 @@ import Foundation
 import SwiftUI
 import AVFoundation
 
+typealias SoundSource = String
+
+extension String {
+    
+    var urlSound: URL? {
+        let defaultURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first
+        var resourceURL = defaultURL?.appendingPathComponent(self).appendingPathExtension("caf")
+
+#if DEBUG
+        if resourceURL == nil {
+            for framework in Bundle.allFrameworks {
+                resourceURL = framework.url(forResource: self, withExtension: "caf")
+                
+                if resourceURL != nil {
+                    break
+                }
+            }
+        }
+#endif
+        return resourceURL
+    }
+}
+
+enum Pitch: Double, CaseIterable {
+    case D_b = 100
+    case D = 200
+    case E_b = 300
+    case E = 400
+    case F = 500
+    case G_b = 600
+    case G = 700
+    case A_b = 800
+    case A = 900
+    case B_b = 1000
+    case B = 1100
+    case C = 1200
+}
+
+
 class SoundPlayer: ObservableObject {
     var audioPlayer: AudioPlayer
     @Published var beatDelay: Double = 0
@@ -15,27 +54,11 @@ class SoundPlayer: ObservableObject {
         self.audioPlayer = AudioPlayer(engine: engine)
     }
 
-//    func playSound(_ sound: BeatSounds, pitch: Double = 0, speed: Double = 1.0, volume: Float = 1.0, filter: AVAudioUnitDistortionPreset? = nil) {
-//        playSingleAudio(sound.rawValue, pitch: pitch, speed: speed, volume: volume, filter: filter)
-//    }
-//
-//    func playSound(_ sound: BassSounds, pitch: Double = 0, speed: Double = 1.0, volume: Float = 1.0, filter: AVAudioUnitDistortionPreset? = nil) {
-//        playSingleAudio(sound.rawValue, pitch: pitch, speed: speed, volume: volume, filter: filter)
-//    }
-//
-//    func playSound(_ sound: MelodicSounds, pitch: Double = 0, speed: Double = 1.0, volume: Float = 1.0, filter: AVAudioUnitDistortionPreset? = nil) {
-//        playSingleAudio(sound.rawValue, pitch: pitch, speed: speed, volume: volume, filter: filter)
-//    }
-//
-//    func playSound(_ sound: AmbientSounds, pitch: Double = 0, speed: Double = 1.0, volume: Float = 1.0, filter: AVAudioUnitDistortionPreset? = nil) {
-//        playSingleAudio(sound.rawValue, pitch: pitch, speed: speed, volume: volume, filter: filter)
-//    }
-//
-//    func playSound(_ sound: SoundFXSounds, pitch: Double = 0, speed: Double = 1.0, volume: Float = 1.0, filter: AVAudioUnitDistortionPreset? = nil) {
-//        playSingleAudio(sound.rawValue, pitch: pitch, speed: speed, volume: volume, filter: filter)
-//    }
-//
-    private func playSingleAudio(_ sound: SoundSource, pitch: Double, speed: Double, volume: Float, filter: AVAudioUnitDistortionPreset?) {
+    func playSound(_ sound: SoundSource, pitch: Double = 0, speed: Double = 1.0, volume: Float = 1.0, filter: AVAudioUnitDistortionPreset? = nil) {
+        playSingleAudio(sound, pitch: pitch, speed: speed, volume: volume, filter: filter)
+    }
+
+    func playSingleAudio(_ sound: SoundSource, pitch: Double, speed: Double, volume: Float, filter: AVAudioUnitDistortionPreset?) {
         let node = AVAudioPlayerNode()
         let length = AudioPlayer.soundLength(sound, speed: speed)
         audioPlayer.playSound(sound, node: node, pitch: pitch, speed: speed, volume: volume, filter: filter, length: length)
@@ -76,6 +99,10 @@ class SoundPlayer: ObservableObject {
     func stopLoop(_ node: AVAudioPlayerNode) {
         node.stop()
         self.audioPlayer.removeNode(node: node)
+    }
+    
+    func stopSound(){
+        audioPlayer.stopEngine()
     }
     
     func stopAllSounds(loopingButtons: Binding<[AVAudioNode: Binding<Bool>]>) {

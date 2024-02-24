@@ -120,6 +120,7 @@ struct MusicURL {
 struct RecordingTitleView: View {
     @Binding var songTitle: String
     @Binding var showEndSheet: Bool
+    @EnvironmentObject var masterMic: Recorder
     var url: URL?
     var body: some View {
         ZStack(alignment: .trailingLastTextBaseline) {
@@ -140,7 +141,7 @@ struct RecordingTitleView: View {
                     do {
                         // Save file at newURL
                         // For example, if you want to save a string as a text file:
-                        try self.songTitle.write(to: newURL, atomically: true, encoding: .utf8)
+//                        try masterMic.recordingFile.write(to: newURL, atomically: true, encoding: .utf8)
                     } catch {
                         print("Error saving file: \(error.localizedDescription)")
                     }

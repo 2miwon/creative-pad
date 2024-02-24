@@ -6,7 +6,12 @@ import CoreMedia
 struct RecordButton: View {
     @EnvironmentObject var masterSetting : SettingManager
     @EnvironmentObject var masterMic: Recorder
-
+    @ObservedObject var tracker: ButtonTracker
+    
+    init(tracker: ButtonTracker){
+        self.tracker = tracker
+    }
+    
     var body: some View {
         Button{
             if available() {
@@ -42,6 +47,7 @@ struct RecordButton: View {
     func toggleMic(){
         if masterMic.isRecording == .on {
             masterMic.isRecording = .off
+            tracker.allStop()
             masterSetting.showEndSheet = true
         } else {
             masterMic.isRecording = .on
@@ -52,7 +58,7 @@ struct RecordButton: View {
 
 struct RecordButton_Previews: PreviewProvider {
     static var previews: some View {
-        RecordButton()
+        RecordButton(tracker: ButtonTracker(num: 36))
             .background(.black)
             .environmentObject(SettingManager())
             .environmentObject(Recorder())

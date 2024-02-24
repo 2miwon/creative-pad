@@ -9,8 +9,8 @@ import SwiftUI
 
 @main
 struct CreativePadApp: App {
-    let masterSetting = SettingManager()
-    let masterMic = Recorder()
+    @StateObject var masterSetting = SettingManager()
+    @StateObject var masterMic = Recorder()
     
     var body: some Scene {
         WindowGroup {

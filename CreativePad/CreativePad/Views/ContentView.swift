@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var masterSetting: SettingManager
     @StateObject var tracker = ButtonTracker(num: 36)
     
     var body: some View {
@@ -8,14 +9,22 @@ struct ContentView: View {
             Color(.black).ignoresSafeArea()
             VStack {
                 HStack{
-                    SideBar()
+//                    if let button = tracker.selectedButton {
+//                        Text(String(describing: button.fileURL))
+//                            .foregroundColor(Color.red)
+//                    } else {
+//                        Text("fuck")
+//                            .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
+//                    }
+                    SideBar(tracker: tracker)
                     TuneSection(tracker: tracker)
                         .frame(width: 300)
                     PadView(tracker: tracker)
+                        .environmentObject(MicRecorder(tracker: tracker))
+                        .environmentObject(SoundPlayer())
                         .frame(maxWidth: .infinity, maxHeight: .infinity)
 //                        .scaledToFill()
     //                    .padding(5)
-                    
                 }
             }
             .background(.black)
@@ -29,6 +38,7 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
             .environmentObject(SettingManager())
             .environmentObject(Recorder())
+            .environmentObject(MicRecorder(tracker: ButtonTracker(num: 36)))
     }
 }
 

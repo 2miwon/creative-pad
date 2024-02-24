@@ -2,12 +2,20 @@ import SwiftUI
 
 struct PlayButton: View {
     @EnvironmentObject var masterSetting : SettingManager
+    @ObservedObject var tracker: ButtonTracker
+    
+    init(tracker: ButtonTracker){
+        self.tracker = tracker
+    }
     
     var body: some View {
         Button{
             if available() {
                 withAnimation(nil){
                     masterSetting.isPausing.toggle()
+                    if masterSetting.isPausing {
+                        tracker.allStop()
+                    }
                 }
             }
         } label: {
@@ -29,7 +37,7 @@ struct PlayButton: View {
 
 struct PlayButton_Previews: PreviewProvider {
     static var previews: some View {
-        PlayButton()
+        PlayButton(tracker: ButtonTracker(num: 36))
             .background(.black)
             .environmentObject(SettingManager())
     }
