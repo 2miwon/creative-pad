@@ -68,7 +68,6 @@ class Recorder: ObservableObject {
         DispatchQueue.main.asyncAfter(deadline: .now()) { [self] in
             self.newSamples = [SampleValue](repeating: SampleValue(value: -50), count: countSamples)
             self.countSamples = countSamples
-            
             Recorder.engine.mainMixerNode.installTap(onBus: 0,
                                              bufferSize: 1024,
                                              format: Recorder.engine.mainMixerNode.outputFormat(forBus: 0)) { (buffer, time) -> Void in

@@ -20,6 +20,7 @@ struct RecordingView: View {
                     }
                     .frame(maxWidth: 300, maxHeight: masterMic.isRecording == .on ? 100 : 0)
                     .opacity(masterMic.isRecording == .on ? 1 : 0)
+                    .foregroundColor(Color.red)
                     
                     StopWatchView(time: masterMic.progressTimeRecording)
                         .frame(height: masterMic.isRecording == .on ? 20 : 0)
